@@ -10,7 +10,6 @@
 <body>
     <div class="container">
         <h1 class="mb-4">Blog Articles</h1>
-        <a href="blog/new" class="btn btn-success">New Article</a>
 
         <% articles.forEach(article => { %>
             <div class="card mt-4">
@@ -21,9 +20,6 @@
                     </div>
                     <div class="card-text mb-2"><%= article.description %></div>
                     <a href="blog/<%= article.slug %>" class="btn btn-primary">Read More</a>
-                    <form action="/blog/<%= article.id %>?_method=DELETE" method="POST" class="d-inline">
-                        <button type="submit" class="btn btn-danger">Delete</button>
-                    </form>
                 </div>
             </div>
         <% }) %>
