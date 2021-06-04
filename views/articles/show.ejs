@@ -4,11 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
     <title>Blog</title>
 </head>
 <body>
     <div class="container">
+
+
+        <div class="navbar">
+            <h1 class="mb-4">Morax</h1>
+            <a href="/">Home</a>
+            <a href="/about">About Me</a>
+            <a href="/projects">Projects</a>
+            <a href="/blog">Blog</a>
+            <a href="/contact">Contact</a>
+        </div>
+
+
         <h1 class="mb-1"><%= article.title %></h1>
         <div class="text-muted mb-2"><%= article.createdAt.toLocaleDateString() %></div>
         <a href="/blog" class="btn btn-secondary">All Articles</a>
