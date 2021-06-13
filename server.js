@@ -5,7 +5,6 @@ const mainRouter = require('./routes/main')
 const articleRouter = require('./routes/articles')
 const methodOverride = require('method-override')
 const app = express()
-// const jwt = require('jsonwebtoken')
 
 // Connect to MongoDB Atlas
 const dbURI = 'mongodb+srv://morax:e0qmWtnVjIaYMqt7@blogcluster.wc0km.mongodb.net/blog-db?retryWrites=true&w=majority'
@@ -20,8 +19,12 @@ app.use(express.urlencoded({ extended: false }))
 app.use(methodOverride('_method'))
 
 app.get('/', (req, res) => {
-    res.render('main')
+    res.render('home')
 })
+
+app.use('/styles', express.static('styles'))
+
+app.use('/assets', express.static('assets'))
 
 app.use('/', mainRouter)
 app.use('/blog', articleRouter)
