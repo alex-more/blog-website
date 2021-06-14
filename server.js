@@ -7,7 +7,7 @@ const methodOverride = require('method-override')
 const app = express()
 
 // Connect to MongoDB Atlas
-const dbURI = 'mongodb+srv://morax:e0qmWtnVjIaYMqt7@blogcluster.wc0km.mongodb.net/blog-db?retryWrites=true&w=majority'
+const dbURI = 'mongodb+srv://<your_username>:<your_password>@blogcluster.wc0km.mongodb.net/blog-db?retryWrites=true&w=majority'
 
 mongoose.connect(dbURI, {
     useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true
