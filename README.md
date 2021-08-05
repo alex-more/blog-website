@@ -4,7 +4,7 @@
 
 This is a fairly simple blog-type website made with the following technologies : 
 
-- Node.js running on an Nginx web server for queries
+- Node.js for backend queries
 - MongoDB Atlas for the blog's database, you can update this easily on your local computer by using another app, located here : https://github.com/alex-more/blog-manager
 - Html + CSS frontend. Did not bother with Bootstrap or Sass because I like Flexbox and especially Grid.
 
