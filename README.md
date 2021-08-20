@@ -10,6 +10,9 @@ This is a fairly simple blog-type website made with the following technologies :
 
 The design is nothing special, as I am still learning about Web development and quickly wanted to move on to a more robust and complex web application.
 
+## Preview
+![What is this](preview.jpg)
+
 ## User Guide
 
 First clone this repo, and if you want to be able to update blog posts more easily in a nice little browser window, you can also clone the blog-manager at the previously mentioned URL.
